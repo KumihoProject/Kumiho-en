@@ -27,7 +27,6 @@ https://medium.com/@kumiho_48780/kumiho%EC%9D%98-%EA%B5%AC%EC%A1%B0-1-a551fda2ab
    :caption: User Documentation:
 
    Foxfire
-   Ninetales
    FoxBead
 
 .. toctree::
