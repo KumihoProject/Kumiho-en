@@ -6,7 +6,7 @@
 Ahri
 ====
 
-``Ahri`` 는 Kumiho 플랫폼을 사용하기 위한 SDK입니다. 
+``Ahri`` is the SDK for building Kumiho apps.
 
 .. code-block:: javascript
 
@@ -21,7 +21,7 @@ compileSolidity
 
     async compileSolidity(solidity, { version, host })
     
-솔리디티를 컴파일 하는 함수. ``${host}/api/compile`` 로 요청합니다. host의 기본값은 ``https://kumiho.org`` 입니다. version의 기본값은 ``v0.5.6+commit.b259423e``입니다. ``Solidity.sol`` 로 컴파일 됩니다.
+Compiles Solidity. A request is sent to ``${host}/api/compile``. The 'host' parameter defaults to ``https://kumiho.org``. The 'version' parameter defaults to ``v0.5.6+commit.b259423e``. The result is returned as ``Solidity.sol``.
 
 .. code-block:: javascript
 
@@ -43,7 +43,7 @@ deployContract
 
     async deployContract(abi, bin, args, options = {})
     
-Contract를 배포합니다.
+Deploys a Contract.
 
 .. code-block:: javascript
 
@@ -63,31 +63,31 @@ callByUrl
 
     async callByUrl(url, method, args, value = 0, options = {})
     
-``callByUrl`` 은 해당 url을 가진 Smart Contract를 호출하는 함수입니다. ``POST`` 일 경우 리턴값은 없습니다.
+``callByUrl`` invokes the Smart Contract mapped by the 'url'. Note that nothing will be returned for a ``POST`` request.
 
 ----------
 Parameters
 ----------
 
-1. ``url`` - ``String``: 타겟 Contract와 매핑된 Url
-2. ``method`` - ``'GET'|'POST'``: Target을 호출할 method. pure, view 함수일 경우 ``GET`` 을, 일반적인 함수나 payable일 경우 ``POST`` 를 사용 합니다.
-3. ``args`` - ``Array``: Contract에 넘겨 줄 arguments
-4. ``value`` - ``int``: 지불할 비용(Peb). ``method`` 가 ``GET`` 일때는 무시됩니다. default: 0
+1. ``url`` - ``String``: The URL by which the target Contract is mapped.
+2. ``method`` - ``'GET'|'POST'``: The method with which the target Contract is called. Use ``GET`` for pure functions, and ``POST`` for payable functions or any other functions.
+3. ``args`` - ``Array``: The arguments to be passed to the Contract.
+4. ``value`` - ``int``: The amount of value to be transferred (in peb). Ignored when ``method === 'GET'``. (default: 0)
 5. ``options``
 
 ----------
 Options
 ----------
 
-1. ``gas`` - ``int``: gas 제한. default: 1500000
-2. ``gasPrice`` - ``int``: gas price. default: caver default
-3. ``anonymous`` - ``Boolean``: (v1.0.1) Method가 GET이고 anonymous가 true일경우 호출시 msg.sender를 ``0x0000000000000000000000000000000000000000`` 로 설정. Kaikas에 접근 권한을 묻지 않는다.
+1. ``gas`` - ``int``: The uppder limit for gas. (default: 1500000)
+2. ``gasPrice`` - ``int``: The gas price. (default: caver default)
+3. ``anonymous`` - ``Boolean``: (v1.0.1) When ``anonymous === true`` and ``method === 'GET'``, ``msg.sender`` will be set to ``0x0000000000000000000000000000000000000000``, so that no access request to Kaikas occurs.
 
 ----------
 Returns
 ----------
 
-1. ``Object`` - Contract가 리턴한 값
+1. ``Object`` - The value returned from the Contract.
 
 .. code-block:: javascript
 
