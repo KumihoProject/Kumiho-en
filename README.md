@@ -1,6 +1,6 @@
-# Kumiho
+# Kumiho EN
 
-Kumiho Project
+Docs: https://kumiho-en.readthedocs.io/en/latest/
 
 ----
 
