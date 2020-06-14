@@ -6,7 +6,8 @@
 Foxfire
 ====
 
-``Foxfire`` 는 kumiho 플랫폼 사용을 위한 Browser Extension입니다. ``*.klay`` 도메인에 대한 프록시와 :ref:`Ahri<Ahri>` SDK를 주입하는 역할을 합니다.
+``Foxfire`` is a browser extension needed to use Kumiho platform. It provides a proxy for ``*.klay`` domains and injects :ref:`Ahri<Ahri>` SDK into your
+browser.
 
 - Chrome_
 - Firefox_
