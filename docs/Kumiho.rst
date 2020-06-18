@@ -15,13 +15,13 @@ Kumiho supports Chrome and Firefox. You need to install one of the following bro
 .. note::
     Kumiho needs :ref:`Foxfire<Foxfire>` and Kaikas pre-installed.
 
-If you want to deploy a new web application, register a domain at http://kumiho.klay/enroll_domain.
+If you want to deploy a new web application, register a domain at http://kumiho.klay/buy_domain.
 
 ------------------------------------------------------------------------------
 
 Deploy Web Application
 =============
-1. Purchase a domain you want at http://kumiho.klay/enroll_domain. Subdomains are not currently supported. Domains must end in .klay.
+1. Purchase a domain you want at http://kumiho.klay/buy_domain. Subdomains are not currently supported. Domains must end in .klay.
 2. After you purchase, you can manage the registered domains at http://kumiho.klay/dashboard with your Kaikas account.
 3. You can register a web page by clicking + Add Web Page on the domain management page. You can also register a solidity function on Path by clicking
  + Add API on the same page.
