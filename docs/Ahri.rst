@@ -118,7 +118,7 @@ Parameters
 
 1. ``address`` - ``Address``: Address of the target Contract
 2. ``method`` - ``'GET'|'POST'``: The method with which the target Contract is called. Use ``GET`` for pure functions, and ``POST`` for payable functions or any other functions.
-3. ``functionName`` - ``string``: 호출할 함수 이름
+3. ``functionName`` - ``string``: The name of the function to be called.
 4. ``args`` - ``Array``: The arguments to be passed to the Contract.
 5. ``argTypes`` - ``Array<Type>``: The types for the given arguments: ``['uint256', 'string', 'address']``
 6. ``resultTypes`` - ``Array<Type>``: The types for the return values: ``['uint256', 'string', 'address']``
